@@ -168,3 +168,5 @@ Sau khi tạo xong file Nginx, reload lại bằng lệnh:
 Sau khi chạy xong, test với Postman để kiểm tra xem backend api đã hoạt động chưa:
 
 ![Create Account](/images/3/EC11.png?featherlight=false&width=90pc)
+
+Thông báo cho thấy API Backend đã kết nối thành công
