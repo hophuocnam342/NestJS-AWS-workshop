@@ -1,0 +1,25 @@
+---
+title : "Tạo Key Pair"
+date : "2025-06-08"
+weight : 3
+chapter : false
+pre : " <b> 1.3 </b> "
+---
+
+Trong mục **Network & Security** của giao diện **EC2**:
+- Chọn **Key Pairs**
+- Chọn **Create key pair**
+
+![Create Account](/images/1/KP.png?featherlight=false&width=90pc)
+
+Trong giao diện khởi tạo:
+- Mục **Name**, đặt là **ecourse-key**
+- Mục **Key pair type**, chọn **RSA**
+- Mục **Private key file format**, chọn **.pem**
+- Kéo xuống cuối trang chọn **Create key pair**
+
+![Create Account](/images/1/KP1.png?featherlight=false&width=90pc)
+
+{{% notice note %}}
+Key pair là cần thiết khi khởi tạo EC2.
+{{% /notice %}}
