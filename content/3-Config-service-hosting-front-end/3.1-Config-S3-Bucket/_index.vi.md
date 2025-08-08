@@ -20,7 +20,7 @@ pre : " <b> 3.1 </b> "
 - **Bucket Versioning**. chọn **disable**.
 - Những mục khác có thể giữ nguyên, sau đó chọn **Create Bucket**
 
-![Create Account](/NestJS-AWS-workshop/images/03/S32.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/s32.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/S33.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/S34.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/S35.PNG)

@@ -16,7 +16,7 @@ Nhập dòng lệnh sau:
 - Default region name: chọn region, ở đây là **us-east-1**
 - Default output format: nhập **json**
 
-![Create Account](/NestJS-AWS-workshop/images/3/EC.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC.PNG)
 
 - Ssh đến EC2 bằng câu lệnh
 ```bash
@@ -25,7 +25,7 @@ Nhập dòng lệnh sau:
 - Thay **C:\path\to\ecourse-key.pem** bằng đường dẫn thực tế đến file key.
 - Thay **[EC2-PUBLIC-IP]** bằng IP public của EC2.
 
-![Create Account](/NestJS-AWS-workshop/images/3/EC1.PNG)
+![Create Account](/NestJS-AWS-workshop/images/3/EC1.png)
 
 Sau khi SSH thành công, chạy các lệnh sau:
 ```bash

@@ -24,7 +24,7 @@ pre : " <b> 3.1 </b> "
 
 - Other items can be kept as is, then select **Create Bucket**
 
-![Create Account](/NestJS-AWS-workshop/images/03/S32.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/s32.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/S33.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/S34.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/S35.PNG)
