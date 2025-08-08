@@ -16,7 +16,7 @@ pre : " <b> 1.1 </b> "
 
 - Select VPC
 
-![Create Account](/static/images/1/VPC.png)
+![VPC](/NestJS-AWS-workshop/images/1/VPC.png)
 
 2. In the **VPC** interface
 
@@ -24,7 +24,7 @@ pre : " <b> 1.1 </b> "
 
 - Select Create VPC
 
-![Create Account](../images/1/VPC2.png)
+![Create Account](/images/1/VPC2.png)
 
 3. Options in **VPC Wizard**
 
