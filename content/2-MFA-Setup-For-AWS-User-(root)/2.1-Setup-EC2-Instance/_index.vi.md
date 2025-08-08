@@ -13,20 +13,20 @@ Truy cập vào [AWS Management Console](https://ap-southeast-1.console.aws.amaz
 - Tìm **EC2**
 - Chọn **EC2**
 
-![Create Account](/images/2/EC.png)
+![Create Account](/static/images/2/EC.png)
 
 Trong giao diện **EC2**:
 
 - Chọn **Launch instances**
 
-![Create Account](/images/2/EC1.png)
+![Create Account](/static/images/2/EC1.png)
 
 #### Cấu hình thông tin cơ bản
 
 - Đặt tên cho instance, nhập **ecourse-backend**.
 - Chọn **AMI**, chọn **Ubuntu**
 
-![Create Account](/images/2/EC3.png)
+![Create Account](/static/images/2/EC3.png)
 
 - Mục **Instance type**, chọn **t2.micro**
 
@@ -36,10 +36,10 @@ Bạn nên chọn những Instance type thuộc **Free tier eligible** để 
 
 - Mục **Key pair(login)**, chọn key pair vừa tạo ở mục [**1.3**](/vi/1-create-new-aws-account/1.3-create-key-pair/)
 
-![Create Account](/images/2/EC4.png)
+![Create Account](/static/images/2/EC4.png)
 
 - Mục **Network settings**, chọn **Select existing security group**.
 - Chọn Sercurity group  đã tạo ở mục [**1.2**](/vi/1-create-new-aws-account/1.2-create-security-group-for-ec2/)
 - Chọn **Launch ínstance**
 
-![Create Account](/images/2/EC5.png)
+![Create Account](/static/images/2/EC5.png)

@@ -13,13 +13,13 @@ Go to [AWS Management Console](https://ap-southeast-1.console.aws.amazon.com/):
 - Search for **EC2**
 - Select **EC2**
 
-![Create Account](/images/2/EC.png)
+![Create Account](/static/images/2/EC.png)
 
 In the **EC2** interface:
 
 - Select **Launch instances**
 
-![Create Account](/images/2/EC1.png)
+![Create Account](/static/images/2/EC1.png)
 
 #### Configure basic information
 
@@ -27,7 +27,7 @@ In the **EC2** interface:
 
 - Select **AMI**, select **Ubuntu**
 
-![Create Account](/images/2/EC3.png)
+![Create Account](/static/images/2/EC3.png)
 
 - In **Instance type**, select **t2.micro**
 
@@ -38,10 +38,10 @@ You should choose Instance types belonging to **Free tier eligible** to avoid fe
 
 - In **Key pair(login)**, select the key pair just created in [**1.3**](/vi/1-create-new-aws-account/1.3-create-key-pair/)
 
-![Create Account](/images/2/EC4.png?featherlight=false&width=90pc)
+![Create Account](/static/images/2/EC4.png?featherlight=false&width=90pc)
 
 - In **Network settings**, select **Select existing security group**.
 - Select the Security group created in [**1.2**](/vi/1-create-new-aws-account/1.2-create-security-group-for-ec2/)
 - Select **Launch instance**
 
-![Create Account](/images/2/EC5.png?featherlight=false&width=90pc)
+![Create Account](/static/images/2/EC5.png?featherlight=false&width=90pc)

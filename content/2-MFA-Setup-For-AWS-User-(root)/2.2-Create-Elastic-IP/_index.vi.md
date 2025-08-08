@@ -14,21 +14,21 @@ Trong mục **Network & Security** của giao diện **EC2**:
 - Chọn **Elastic IPs**
 - Chọn **Allocate Elastic IP address**
 
-![Create Account](/images/2/IP.png)
+![Create Account](/static/images/2/IP.png)
 
 - Mục **Public IPv4 address pool**, chọn **Amazon's pool of IPv4 addresses**.
 - Mục **Network border group**, chọn region mà bạn muốn sử dụng, ở đây là **us-east-1**.
 - Chọn **Allocate**.
 
-![Create Account](/images/2/IP2.png)
+![Create Account](/static/images/2/IP2.png)
 
 Sau khi tạo xong, ở giao diện Elastic IPs:
 - Chọn Ip vừa tạo, chọn nút **Actions**, chọn **Associate Elastic IP address**
 
-![Create Account](/images/2/IP3.png)
+![Create Account](/static/images/2/IP3.png)
 
 - Ở mục **Resource type**, chọn **Instance**
 - Chọn Instance vừa tạo
 - Chọn **Associate**
 
-![Create Account](/images/2/IP4.png)
+![Create Account](/static/images/2/IP4.png)

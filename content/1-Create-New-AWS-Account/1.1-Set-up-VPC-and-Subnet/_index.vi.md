@@ -22,7 +22,7 @@ pre : " <b> 1.1 </b> "
 - Chọn Your VPCs
 - Chọn Create VPC
 
-![Create Account](images/1/VPC2.png)
+![Create Account](/static/images/1/VPC2.png)
 
 3. Tùy chọn trong **VPC Wizard**
 
@@ -32,6 +32,6 @@ pre : " <b> 1.1 </b> "
 - Chọn số lượng **public/private subnet**: 2
 - Chọn **Create VPC** 
 
-![Create Account](/images/1/VPC3.png)
+![Create Account](/static/images/1/VPC3.png)
 
 

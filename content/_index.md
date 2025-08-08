@@ -10,7 +10,7 @@ chapter : false
 #### Overview
 
 In this lab, you will be guided on how to deploy a **website running the Nestjs API backend** to **AWS platform**. With optimal support services such as **EC2, VPC, S3, Cloudfront,...**, your website will operate quickly, meeting the strict requirements of users.
-![Deploy](/images/1/Diagram.png)
+![Deploy](/static/images/1/Diagram.png)
 
 #### Introducing Amazon Elastic Compute Cloud (EC2)
 
@@ -21,7 +21,7 @@ Amazon EC2 is a service that provides scalable cloud computing capabilities on A
 
 - **Amazon EC2** supports a variety of workloads such as: web hosting, applications, databases, authentication services, and any task that a regular server can perform.
 
-![Create Account](/images/1/h1.jpeg)
+![Create Account](/static/images/1/h1.jpeg)
 
 #### Introducing Amazon Virtual Private Cloud (Amazon VPC)
 
