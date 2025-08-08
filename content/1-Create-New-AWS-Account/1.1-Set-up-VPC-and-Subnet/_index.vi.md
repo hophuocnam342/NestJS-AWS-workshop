@@ -15,14 +15,14 @@ pre : " <b> 1.1 </b> "
 - Tìm VPC
 - Chọn VPC
 
-![Create Account](//images/1/VPC.png)
+![Create Account](/static/images/1/VPC.png)
 
 2. Trong giao diện **VPC**
 
 - Chọn Your VPCs
 - Chọn Create VPC
 
-![Create Account](//images/1/VPC2.png)
+![Create Account](images/1/VPC2.png)
 
 3. Tùy chọn trong **VPC Wizard**
 
