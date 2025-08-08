@@ -10,8 +10,7 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
-  images = "https://hophuocnam342.github.io/NestJS-AWS-workshop/images/"
-  imagesPath = "images/"
+  imagespath = "/images/"
   # Git hub repo link
   editURL = ""
   description = ""
