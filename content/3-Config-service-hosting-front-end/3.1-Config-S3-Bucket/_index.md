@@ -11,7 +11,7 @@ pre : " <b> 3.1 </b> "
 - Select and the **S3** interface will appear.
 - Click **Create Bucket**
 
-![Create Account](/images/03/S3.png?featherlight=false&width=90pc)
+![Create Account](/images/03/S3.png)
 
 2. At the **Bucket** initialization interface
 - At **Bucket name**, name it **ecourse-frontend**.
@@ -24,10 +24,10 @@ pre : " <b> 3.1 </b> "
 
 - Other items can be kept as is, then select **Create Bucket**
 
-![Create Account](/images/03/S32.png?featherlight=false&width=90pc)
-![Create Account](/images/03/S33.png?featherlight=false&width=90pc)
-![Create Account](/images/03/S34.png?featherlight=false&width=90pc)
-![Create Account](/images/03/S35.png?featherlight=false&width=90pc)
+![Create Account](/images/03/S32.png)
+![Create Account](/images/03/S33.png)
+![Create Account](/images/03/S34.png)
+![Create Account](/images/03/S35.png)
 
 3. After creating **Bucket**, we need to enable **Static Website Hosting**
 - Click on the bucket just created.
@@ -38,7 +38,7 @@ pre : " <b> 3.1 </b> "
 - Error document: **error.html** (if available, or leave blank)
 - Click Save changes.
 
-![Create Account](/images/03/S36.png?featherlight=false&width=90pc)
+![Create Account](/images/03/S36.png)
 
 4. Configure **Bucket policy**
 
@@ -63,7 +63,7 @@ pre : " <b> 3.1 </b> "
 ```
 
 - Then click **Save changes**
-![Create Account](/images/03/S37.png?featherlight=false&width=90pc)
+![Create Account](/images/03/S37.png)
 
 5. Upload the folder and frontend files to the Bucket
 
@@ -78,8 +78,8 @@ pre : " <b> 3.1 </b> "
 When uploading, you should upload all the sub-files in the parent folder of the frontend project, to avoid errors such as not finding the **index.html** or **error.html** file.
 {{% /notice %}}
 
-![Create Account](/images/03/S38.png?featherlight=false&width=90pc)
-![Create Account](/images/03/S39.png?featherlight=false&width=90pc)
+![Create Account](/images/03/S38.png)
+![Create Account](/images/03/S39.png)
 
 6. Check the website
 - Go back to the **Properties** tab, scroll down to the **Static website hosting** section.
@@ -88,6 +88,6 @@ When uploading, you should upload all the sub-files in the parent folder of the 
 
 - If you see the website appear, it is successful!
 
-![Create Account](/images/03/S310.png?featherlight=false&width=90pc)
+![Create Account](/images/03/S310.png)
 
-![Create Account](/images/03/S311.png?featherlight=false&width=90pc)
+![Create Account](/images/03/S311.png)

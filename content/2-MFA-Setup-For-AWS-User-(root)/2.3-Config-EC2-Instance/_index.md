@@ -16,7 +16,7 @@ AWS Configure
 - Default region name: select region, here is **us-east-1**
 - Default output format: enter **json**
 
-![Create Account](/images/3/EC.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC.png)
 
 - Ssh to EC2 with the command
 ```bash
@@ -26,7 +26,7 @@ AWS Configure
 
 - Replace **[EC2-PUBLIC-IP]** with EC2's public IP.
 
-![Create Account](/images/3/EC1.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC1.png)
 
 After SSH is successful, run the following commands:
 ```bash
@@ -50,11 +50,11 @@ After SSH is successful, run the following commands:
     node --version
     npm --version
 ```
-![Create Account](/images/3/EC2.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC2.png)
 
-![Create Account](/images/3/EC3.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC3.png)
 
-![Create Account](/images/3/EC4.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC4.png)
 
 After installing the necessary paths, we will clone the back end project on git to prepare for deployment to EC2.
 
@@ -80,11 +80,11 @@ run the following commands:
 - The link **"MONGODB_URI"** has been created in section [**1.4**](/vi/1-create-new-aws-account/1.4-create-mongodb-database/), please review.
 - Replace **[your-jwt-secret]** with the secret key for JWT, located in the back end's **.env** file.
 
-![Create Account](/images/3/EC5.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC5.png)
 
-![Create Account](/images/3/EC6.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC6.png)
 
-![Create Account](/images/3/EC9.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC9.png)
 
 After cloning the project, continue running the following commands:
 
@@ -99,11 +99,11 @@ After cloning the project, continue running the following commands:
     pm2 save 
     pm2 startups
 ```
-![Create Account](/images/3/EC6.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC6.png)
 
-![Create Account](/images/3/EC7.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC7.png)
 
-![Create Account](/images/3/EC8.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC8.png)
 
 Then, create Nginx Configuration file
 
@@ -164,8 +164,8 @@ After creating the Nginx file, reload it with the command:
     sudo systemctl reload nginx
 ```
 
-![Create Account](/images/3/EC10.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC10.png)
 
 After running, test with Postman to check if the backend api is working:
 
-![Create Account](/images/3/EC11.png?featherlight=false&width=90pc)
+![Create Account](/images/3/EC11.png)

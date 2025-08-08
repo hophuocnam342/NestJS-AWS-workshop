@@ -15,14 +15,14 @@ pre : " <b> 1.1 </b> "
 - Tìm VPC
 - Chọn VPC
 
-![Create Account](static/images/1/VPC.png?featherlight=false&width=90pc)
+![Create Account](/images/1/VPC.png)
 
 2. Trong giao diện **VPC**
 
 - Chọn Your VPCs
 - Chọn Create VPC
 
-![Create Account](/images/1/VPC2.png?featherlight=false&width=90pc)
+![Create Account](/images/1/VPC2.png)
 
 3. Tùy chọn trong **VPC Wizard**
 
@@ -32,6 +32,6 @@ pre : " <b> 1.1 </b> "
 - Chọn số lượng **public/private subnet**: 2
 - Chọn **Create VPC** 
 
-![Create Account](/images/1/VPC3.png?featherlight=false&width=90pc)
+![Create Account](/images/1/VPC3.png)
 
 

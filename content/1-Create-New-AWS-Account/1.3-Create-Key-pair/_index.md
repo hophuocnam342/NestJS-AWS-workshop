@@ -10,7 +10,7 @@ In the **Network & Security** section of the **EC2** interface:
 - Select **Key Pairs**
 - Select **Create key pair**
 
-![Create Account](/images/1/KP.png?featherlight=false&width=90pc)
+![Create Account](/images/1/KP.png)
 
 In the initialization interface:
 - In the **Name** section, set it to **ecourse-key**
@@ -18,7 +18,7 @@ In the initialization interface:
 - In the **Private key file format** section, select **.pem**
 - Scroll down to the bottom of the page and select **Create key pair**
 
-![Create Account](/images/1/KP1.png?featherlight=false&width=90pc)
+![Create Account](/images/1/KP1.png)
 
 {{% notice note %}}
 Key pair is required when initializing EC2.

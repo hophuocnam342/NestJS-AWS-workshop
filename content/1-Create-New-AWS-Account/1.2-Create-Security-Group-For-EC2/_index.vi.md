@@ -12,14 +12,14 @@ pre : " <b> 1.2 </b> "
 - Chọn **Security Group**
 - Chọn **Create security group**
 
-![Create Account](/images/1/SG.png?featherlight=false&width=90pc)
+![Create Account](/images/1/SG.png)
 
 2. Tiến hành cấu hình
 - **Security group name**, nhập Ecourse-SG
 - **Description**, nhập Security Group for Ecourse
 - Chọn **VPC** đã tạo
 
-![Create Account](/images/1/SG2.png?featherlight=false&width=90pc)
+![Create Account](/images/1/SG2.png)
 
 3. Cấu hình **Inbound rule**
 - Để thêm rule, chọn **Add rule**
@@ -29,4 +29,4 @@ pre : " <b> 1.2 </b> "
 - **HTTPS** cổng 443 và source là **Anywhere IPv4**
 - Chọn **Create security group**
 
-![Create Account](/images/1/SG1.png?featherlight=false&width=90pc)
+![Create Account](/images/1/SG1.png)

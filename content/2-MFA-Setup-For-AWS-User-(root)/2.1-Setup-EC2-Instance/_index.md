@@ -13,13 +13,13 @@ Go to [AWS Management Console](https://ap-southeast-1.console.aws.amazon.com/):
 - Search for **EC2**
 - Select **EC2**
 
-![Create Account](/images/2/EC.png?featherlight=false&width=90pc)
+![Create Account](/images/2/EC.png)
 
 In the **EC2** interface:
 
 - Select **Launch instances**
 
-![Create Account](/images/2/EC1.png?featherlight=false&width=90pc)
+![Create Account](/images/2/EC1.png)
 
 #### Configure basic information
 
@@ -27,7 +27,7 @@ In the **EC2** interface:
 
 - Select **AMI**, select **Ubuntu**
 
-![Create Account](/images/2/EC3.png?featherlight=false&width=90pc)
+![Create Account](/images/2/EC3.png)
 
 - In **Instance type**, select **t2.micro**
 
