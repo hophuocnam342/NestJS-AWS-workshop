@@ -15,7 +15,7 @@ pre : " <b> 1.1 </b> "
 - Tìm VPC
 - Chọn VPC
 
-![Create Account](/images/1/VPC.png?featherlight=false&width=90pc)
+![Create Account](static/images/1/VPC.png?featherlight=false&width=90pc)
 
 2. Trong giao diện **VPC**
 

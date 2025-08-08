@@ -128,6 +128,6 @@ AWS ElastiCache will cover the following for us:
 #### Main content
 
 1. [Preparation](1-create-new-aws-account/)
-2. [Create Auto Scaling for Nestjs Instance](2-mfa-setup-for-aws-user-(root)/)
-3. [Initialize Cloudfront for Web Server](3-create-admin-user-and-group/)
+2. [Install Nestjs backend for EC2](2-mfa-setup-for-aws-user-(root)/)
+3. [Frontend Deployment Service Configuration](3-Config-service-hosting-front-end/)
 4. [Clean up resources](4-verify-new-account/)

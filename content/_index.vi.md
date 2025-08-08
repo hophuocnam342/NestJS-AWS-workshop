@@ -119,6 +119,6 @@ AWS ElastiCache sẽ cover cho ta nhứng thứ sau:
 #### Nội dung chính
 
 1. [Chuẩn bị](1-create-new-aws-account/)
-2. [Thực hiện tạo Auto Scaling cho Nestjs Instance](2-mfa-setup-for-aws-user-(root)/)
-3. [Khởi tạo Cloudfront cho Web Server](3-create-admin-user-and-group/)
+2. [Cài đặt backend Nestjs cho EC2](2-mfa-setup-for-aws-user-(root)/)
+3. [Cấu hình dịch vụ triển khai frontend](3-Config-service-hosting-front-end/)
 4. [Dọn dẹp tài nguyên](4-verify-new-account/)
