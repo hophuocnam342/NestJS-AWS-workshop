@@ -16,7 +16,7 @@ Nhập dòng lệnh sau:
 - Default region name: chọn region, ở đây là **us-east-1**
 - Default output format: nhập **json**
 
-![Create Account](/static/images/3/EC.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC.png)
 
 - Ssh đến EC2 bằng câu lệnh
 ```bash
@@ -25,7 +25,7 @@ Nhập dòng lệnh sau:
 - Thay **C:\path\to\ecourse-key.pem** bằng đường dẫn thực tế đến file key.
 - Thay **[EC2-PUBLIC-IP]** bằng IP public của EC2.
 
-![Create Account](/static/images/3/EC1.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC1.png)
 
 Sau khi SSH thành công, chạy các lệnh sau:
 ```bash
@@ -49,11 +49,11 @@ Sau khi SSH thành công, chạy các lệnh sau:
     node --version
     npm --version
 ```
-![Create Account](/static/images/3/EC2.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC2.png)
 
-![Create Account](/static/images/3/EC3.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC3.png)
 
-![Create Account](/static/images/3/EC4.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC4.png)
 
 sau khi cài đặt các path cần thiết, chúng ta sẽ clone dự án back end trên git về để chuẩn bị triển khai lên EC2.
 
@@ -79,11 +79,11 @@ chạy các lệnh sau:
 - Đường link **"MONGODB_URI"** đã được tạo trong mục [**1.4**](/vi/1-create-new-aws-account/1.4-create-mongodb-database/), vui lòng xem lại.
 - Thay **[your-jwt-secret]** bằng secret key cho JWT, nằm trong file **.env** của back end.
 
-![Create Account](/static/images/3/EC5.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC5.png)
 
-![Create Account](/static/images/3/EC6.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC6.png)
 
-![Create Account](/static/images/3/EC9.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC9.png)
 
 Sau khi clone dự án xong, tiếp tục chạy các lệnh sau:
 
@@ -98,11 +98,11 @@ Sau khi clone dự án xong, tiếp tục chạy các lệnh sau:
     pm2 save
     pm2 startup
 ```
-![Create Account](/static/images/3/EC6.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC6.png)
 
-![Create Account](/static/images/3/EC7.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC7.png)
 
-![Create Account](/static/images/3/EC8.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC8.png)
 
 Sau đó, tạo file Nginx Configuration
 
@@ -163,10 +163,10 @@ Sau khi tạo xong file Nginx, reload lại bằng lệnh:
     sudo systemctl reload nginx
 ```
 
-![Create Account](/static/images/3/EC10.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC10.png)
 
 Sau khi chạy xong, test với Postman để kiểm tra xem backend api đã hoạt động chưa:
 
-![Create Account](/static/images/3/EC11.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC11.png)
 
 Thông báo cho thấy API Backend đã kết nối thành công

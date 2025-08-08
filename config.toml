@@ -10,7 +10,6 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
-  imagespath = "/images/"
   # Git hub repo link
   editURL = ""
   description = ""
@@ -21,7 +20,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Create a new AWS account."
+title = "Deploy Nestjs website to AWS."
 weight = 1
 languageName = "English"
 

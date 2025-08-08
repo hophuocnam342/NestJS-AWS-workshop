@@ -10,7 +10,7 @@ chapter : false
 #### Tổng quan
 
 Trong bài lap này, bạn sẽ được hướng dẫn cách triển khai một **trang web chạy backend API Nestjs** lên **nền tảng của AWS**. Với các dịch vụ hỗ trợ một cách tối ưu như **EC2, VPC, S3, Cloudfront,...**, trang web của bạn sẽ hoạt động một cách nhanh chóng, phù hợp với yêu cầu khắt khe của người dùng.
-![Deploy](/static/images/1/Diagram.png)
+![Deploy](/NestJS-AWS-workshop/images/1/Diagram.png)
 
 #### Giới thiệu Amazon Elastic Compute Cloud (EC2)
 
@@ -20,7 +20,7 @@ Amazon EC2 là dịch vụ cung cấp khả năng điện toán đám mây có t
 
 - **Amazon EC2** hỗ trợ đa dạng các workload như: lưu trữ web, ứng dụng, cơ sở dữ liệu, dịch vụ xác thực và bất kỳ tác vụ nào mà máy chủ thông thường có thể thực hiện.
 
-![Create Account](/static/images/1/h1.jpeg)
+![Create Account](/NestJS-AWS-workshop/images/1/h1.jpeg)
 
 #### Giới thiệu Amazon Virtual Private Cloud (Amazon VPC)
 
