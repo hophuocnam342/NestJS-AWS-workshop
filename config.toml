@@ -12,6 +12,7 @@ home = [ "HTML", "RSS", "JSON"]
   themeVariant = "workshop"
   # Git hub repo link
   editURL = ""
+  images = ["images/"]
   description = ""
   author = "journeyoftheaverageguy@gmail.com"
   showVisitedLinks = true
