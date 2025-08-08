@@ -15,20 +15,20 @@ pre : " <b> 1.4 </b> "
 - Sau khi tạo xong tài khoản, tại giao diện chính chọn **Cluster**
 - Chọn **Build a Cluster**
 
-![Create Account](/NestJS-AWS-workshop/images/1/DB.png)
+![Create Account](/NestJS-AWS-workshop/images/1/DB.PNG)
 
 2. Cấu hình Cluster
 
 - Chọn loại Cluster: chọn **Free**
 
-![Create Account](/NestJS-AWS-workshop/images/1/DB1.png)
+![Create Account](/NestJS-AWS-workshop/images/1/DB1.PNG)
 
 - Chọn Name: đặt tên phù hợp, hoặc để mặc định là **Cluster0**
 - Chọn Provider: Tích vào ô **AWS**
 - Chọn Region: Chọn Region cùng với **Region của EC2 và các dịch vụ khác trên AWS** để tránh sự cố
 - Kiểm tra lại thông tin, và chọn **Create Deployment**
 
-![Create Account](/NestJS-AWS-workshop/images/1/DB2.png)
+![Create Account](/NestJS-AWS-workshop/images/1/DB2.PNG)
 
 3. Tạo kết nối Cluster
 

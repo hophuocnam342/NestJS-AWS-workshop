@@ -23,7 +23,7 @@ In the **Network & Security** section of the **EC2** interface:
 - In the **Network border group** section, select the region you want to use, here is **us-east-1**.
 - Select **Allocate**.
 
-![Create Account](/NestJS-AWS-workshop/images/2/IP2.png)
+![Create Account](/NestJS-AWS-workshop/images/2/IP2.PNG)
 
 After creating, in the Elastic IPs interface:
 
@@ -36,4 +36,4 @@ After creating, in the Elastic IPs interface:
 - Select the newly created Instance
 - Select **Associate**
 
-![Create Account](/NestJS-AWS-workshop/images/2/IP4.png)
+![Create Account](/NestJS-AWS-workshop/images/2/IP4.PNG)

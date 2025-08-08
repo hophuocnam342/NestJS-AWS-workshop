@@ -25,7 +25,7 @@ Nhập dòng lệnh sau:
 - Thay **C:\path\to\ecourse-key.pem** bằng đường dẫn thực tế đến file key.
 - Thay **[EC2-PUBLIC-IP]** bằng IP public của EC2.
 
-![Create Account](/NestJS-AWS-workshop/images/3/EC1.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC1.PNG)
 
 Sau khi SSH thành công, chạy các lệnh sau:
 ```bash
@@ -81,7 +81,7 @@ chạy các lệnh sau:
 
 ![Create Account](/NestJS-AWS-workshop/images/3/EC5.png)
 
-![Create Account](/NestJS-AWS-workshop/images/3/EC6.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC6.PNG)
 
 ![Create Account](/NestJS-AWS-workshop/images/3/EC9.png)
 
@@ -98,8 +98,6 @@ Sau khi clone dự án xong, tiếp tục chạy các lệnh sau:
     pm2 save
     pm2 startup
 ```
-![Create Account](/NestJS-AWS-workshop/images/3/EC6.png)
-
 ![Create Account](/NestJS-AWS-workshop/images/3/EC7.png)
 
 ![Create Account](/NestJS-AWS-workshop/images/3/EC8.png)
@@ -167,6 +165,6 @@ Sau khi tạo xong file Nginx, reload lại bằng lệnh:
 
 Sau khi chạy xong, test với Postman để kiểm tra xem backend api đã hoạt động chưa:
 
-![Create Account](/NestJS-AWS-workshop/images/3/EC11.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC11.PNG)
 
 Thông báo cho thấy API Backend đã kết nối thành công

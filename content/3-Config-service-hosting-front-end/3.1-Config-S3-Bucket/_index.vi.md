@@ -20,10 +20,10 @@ pre : " <b> 3.1 </b> "
 - **Bucket Versioning**. chọn **disable**.
 - Những mục khác có thể giữ nguyên, sau đó chọn **Create Bucket**
 
-![Create Account](/NestJS-AWS-workshop/images/03/S32.png)
-![Create Account](/NestJS-AWS-workshop/images/03/S33.png)
-![Create Account](/NestJS-AWS-workshop/images/03/S34.png)
-![Create Account](/NestJS-AWS-workshop/images/03/S35.png)
+![Create Account](/NestJS-AWS-workshop/images/03/S32.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/S33.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/S34.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/S35.PNG)
 
 3. Sau khi tạo xong **Bucket**, chúng ta cần bật **Static Website Hosting**
 - Click vào bucket vừa tạo.
@@ -34,7 +34,7 @@ pre : " <b> 3.1 </b> "
 - Error document: **error.html** (nếu có, hoặc để trống)
 - Nhấn Save changes.
 
-![Create Account](/NestJS-AWS-workshop/images/03/S36.png)
+![Create Account](/NestJS-AWS-workshop/images/03/S36.PNG)
 
 4. Cấu hình **Bucket policy**
 

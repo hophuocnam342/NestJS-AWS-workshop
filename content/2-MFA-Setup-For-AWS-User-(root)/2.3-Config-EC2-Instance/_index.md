@@ -16,7 +16,7 @@ AWS Configure
 - Default region name: select region, here is **us-east-1**
 - Default output format: enter **json**
 
-![Create Account](/NestJS-AWS-workshop/images/3/EC.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC.PNG)
 
 - Ssh to EC2 with the command
 ```bash
@@ -82,7 +82,7 @@ run the following commands:
 
 ![Create Account](/NestJS-AWS-workshop/images/3/EC5.png)
 
-![Create Account](/NestJS-AWS-workshop/images/3/EC6.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC6.PNG)
 
 ![Create Account](/NestJS-AWS-workshop/images/3/EC9.png)
 
@@ -99,7 +99,6 @@ After cloning the project, continue running the following commands:
     pm2 save 
     pm2 startups
 ```
-![Create Account](/NestJS-AWS-workshop/images/3/EC6.png)
 
 ![Create Account](/NestJS-AWS-workshop/images/3/EC7.png)
 
@@ -168,4 +167,4 @@ After creating the Nginx file, reload it with the command:
 
 After running, test with Postman to check if the backend api is working:
 
-![Create Account](/NestJS-AWS-workshop/images/3/EC11.png)
+![Create Account](/NestJS-AWS-workshop/images/3/EC11.PNG)

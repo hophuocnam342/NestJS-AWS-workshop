@@ -19,7 +19,7 @@ pre : " <b> 1.2 </b> "
 - **Description**, nhập Security Group for Ecourse
 - Chọn **VPC** đã tạo
 
-![Create Account](/NestJS-AWS-workshop/images/1/SG2.png)
+![Create Account](/NestJS-AWS-workshop/images/1/SG2.PNG)
 
 3. Cấu hình **Inbound rule**
 - Để thêm rule, chọn **Add rule**
@@ -29,4 +29,4 @@ pre : " <b> 1.2 </b> "
 - **HTTPS** cổng 443 và source là **Anywhere IPv4**
 - Chọn **Create security group**
 
-![Create Account](/NestJS-AWS-workshop/images/1/SG1.png)
+![Create Account](/NestJS-AWS-workshop/images/1/SG1.PNG)

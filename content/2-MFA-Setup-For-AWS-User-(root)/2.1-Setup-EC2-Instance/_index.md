@@ -27,7 +27,7 @@ In the **EC2** interface:
 
 - Select **AMI**, select **Ubuntu**
 
-![Create Account](/NestJS-AWS-workshop/images/2/EC3.png)
+![Create Account](/NestJS-AWS-workshop/images/2/EC3.PNG)
 
 - In **Instance type**, select **t2.micro**
 
@@ -38,10 +38,10 @@ You should choose Instance types belonging to **Free tier eligible** to avoid fe
 
 - In **Key pair(login)**, select the key pair just created in [**1.3**](/vi/1-create-new-aws-account/1.3-create-key-pair/)
 
-![Create Account](/NestJS-AWS-workshop/images/2/EC4.png)
+![Create Account](/NestJS-AWS-workshop/images/2/EC4.PNG)
 
 - In **Network settings**, select **Select existing security group**.
 - Select the Security group created in [**1.2**](/vi/1-create-new-aws-account/1.2-create-security-group-for-ec2/)
 - Select **Launch instance**
 
-![Create Account](/NestJS-AWS-workshop/images/2/EC5.png)
+![Create Account](/NestJS-AWS-workshop/images/2/EC5.PNG)

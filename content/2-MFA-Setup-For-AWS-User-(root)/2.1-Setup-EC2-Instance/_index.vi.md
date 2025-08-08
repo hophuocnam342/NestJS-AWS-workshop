@@ -26,7 +26,7 @@ Trong giao diện **EC2**:
 - Đặt tên cho instance, nhập **ecourse-backend**.
 - Chọn **AMI**, chọn **Ubuntu**
 
-![Create Account](/NestJS-AWS-workshop/images/2/EC3.png)
+![Create Account](/NestJS-AWS-workshop/images/2/EC3.PNG)
 
 - Mục **Instance type**, chọn **t2.micro**
 
@@ -36,10 +36,10 @@ Bạn nên chọn những Instance type thuộc **Free tier eligible** để 
 
 - Mục **Key pair(login)**, chọn key pair vừa tạo ở mục [**1.3**](/vi/1-create-new-aws-account/1.3-create-key-pair/)
 
-![Create Account](/static/images/2/EC4.png)
+![Create Account](/static/images/2/EC4.PNG)
 
 - Mục **Network settings**, chọn **Select existing security group**.
 - Chọn Sercurity group  đã tạo ở mục [**1.2**](/vi/1-create-new-aws-account/1.2-create-security-group-for-ec2/)
 - Chọn **Launch ínstance**
 
-![Create Account](/NestJS-AWS-workshop/images/2/EC5.png)
+![Create Account](/NestJS-AWS-workshop/images/2/EC5.PNG)

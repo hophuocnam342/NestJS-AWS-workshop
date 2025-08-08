@@ -24,10 +24,10 @@ pre : " <b> 3.1 </b> "
 
 - Other items can be kept as is, then select **Create Bucket**
 
-![Create Account](/NestJS-AWS-workshop/images/03/S32.png)
-![Create Account](/NestJS-AWS-workshop/images/03/S33.png)
-![Create Account](/NestJS-AWS-workshop/images/03/S34.png)
-![Create Account](/NestJS-AWS-workshop/images/03/S35.png)
+![Create Account](/NestJS-AWS-workshop/images/03/S32.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/S33.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/S34.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/S35.PNG)
 
 3. After creating **Bucket**, we need to enable **Static Website Hosting**
 - Click on the bucket just created.
@@ -38,7 +38,7 @@ pre : " <b> 3.1 </b> "
 - Error document: **error.html** (if available, or leave blank)
 - Click Save changes.
 
-![Create Account](/NestJS-AWS-workshop/images/03/S36.png)
+![Create Account](/NestJS-AWS-workshop/images/03/S36.PNG)
 
 4. Configure **Bucket policy**
 

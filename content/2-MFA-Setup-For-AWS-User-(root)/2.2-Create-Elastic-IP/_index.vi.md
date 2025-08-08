@@ -20,7 +20,7 @@ Trong mục **Network & Security** của giao diện **EC2**:
 - Mục **Network border group**, chọn region mà bạn muốn sử dụng, ở đây là **us-east-1**.
 - Chọn **Allocate**.
 
-![Create Account](/NestJS-AWS-workshop/images/2/IP2.png)
+![Create Account](/NestJS-AWS-workshop/images/2/IP2.PNG)
 
 Sau khi tạo xong, ở giao diện Elastic IPs:
 - Chọn Ip vừa tạo, chọn nút **Actions**, chọn **Associate Elastic IP address**
@@ -31,4 +31,4 @@ Sau khi tạo xong, ở giao diện Elastic IPs:
 - Chọn Instance vừa tạo
 - Chọn **Associate**
 
-![Create Account](/NestJS-AWS-workshop/images/2/IP4.png)
+![Create Account](/NestJS-AWS-workshop/images/2/IP4.PNG)

@@ -15,20 +15,20 @@ pre : " <b> 1.4 </b> "
 - After creating the account, on the main interface select **Cluster**
 - Select **Build a Cluster**
 
-![Create Account](/NestJS-AWS-workshop/images/1/DB.png)
+![Create Account](/NestJS-AWS-workshop/images/1/DB.PNG)
 
 2. Cluster Configuration
 
 - Select Cluster type: select **Free**
 
-![Create Account](/NestJS-AWS-workshop/images/1/DB1.png)
+![Create Account](/NestJS-AWS-workshop/images/1/DB1.PNG)
 
 - Select Name: name appropriately, or leave the default as **Cluster0**
 - Select Provider: Check the **AWS** box
 - Select Region: Select Region along with **Region of EC2 and other services on AWS** to avoid problems
 - Check the information again, and select **Create Deployment**
 
-![Create Account](/NestJS-AWS-workshop/images/1/DB2.png)
+![Create Account](/NestJS-AWS-workshop/images/1/DB2.PNG)
 
 3. Create Cluster connection
 

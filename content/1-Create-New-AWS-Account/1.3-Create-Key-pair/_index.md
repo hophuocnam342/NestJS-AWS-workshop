@@ -18,7 +18,7 @@ In the initialization interface:
 - In the **Private key file format** section, select **.pem**
 - Scroll down to the bottom of the page and select **Create key pair**
 
-![Create Account](/NestJS-AWS-workshop/images/1/KP1.png)
+![Create Account](/NestJS-AWS-workshop/images/1/KP1.PNG)
 
 {{% notice note %}}
 Key pair is required when initializing EC2.

@@ -37,18 +37,18 @@ pre : " <b> 3.2 </b> "
 
 - Select **Next**.
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf4.png)
-![Create Account](/NestJS-AWS-workshop/images/03/cf5.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf4.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/cf5.PNG)
 
 - Select **Amazon S3** for the **Origin type** field
 - In the Origin S3 field, select the S3 bucket you created.
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf6.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf6.PNG)
 
 - In **Setting**, check **Allow private S3 access to Cloudfront**
 - In **Origin setting**, select **Use recommended origin setting**, then select **Next**
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf7.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf7.PNG)
 
 - In **Enable security**, select **Do not enable security protections**
 - Check the information again and select **Create distribution**
@@ -62,12 +62,12 @@ pre : " <b> 3.2 </b> "
 
 - **Origin access** field, select **Origin access control setting**
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf9.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf9.PNG)
 
 - **Origin access control** section, select **e-course-OAC**
 - Next, a notification board appears, select **Copy policy**, then click **go to S3 bucket permissions** to edit **policy** (usually it will be automatically edited).
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf10.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf10.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/cf11.png)
 
 - Finally, select **Create origin**
@@ -76,11 +76,11 @@ pre : " <b> 3.2 </b> "
 - In **Add object path**, write **/** to update all new content on the bucket.
 - Then, select **Create invalidation**
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf12.png)
-![Create Account](/NestJS-AWS-workshop/images/03/cf13.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf12.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/cf13.PNG)
 
 6. Check the website
 - To check if the website is active on **Cloudfront** or not, select the **Distribution** just created, switch to the **General** tab, copy the **Distribution domain name** and run it on the browser.
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf14.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf14.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/cf15.png)

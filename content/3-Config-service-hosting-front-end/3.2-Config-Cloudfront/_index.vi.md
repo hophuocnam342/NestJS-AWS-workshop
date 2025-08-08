@@ -33,18 +33,18 @@ pre : " <b> 3.2 </b> "
 - Chọn **Single website or app**.
 - Chọn **Next**.
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf4.png)
-![Create Account](/NestJS-AWS-workshop/images/03/cf5.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf4.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/cf5.PNG)
 
 - Chọn **Amazon S3** cho trường **Origin type**
 - Trong trường Origin S3, chọn S3 bucket mà bạn đã tạo.
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf6.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf6.PNG)
 
 - Mục **Setting**, tích vào **Allow private S3 access to Cloudfront**
 - Mục **Origin setting**, chọn **Use recommended origin setting**, sau đó chọn **Next**
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf7.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf7.PNG)
 
 - Mục **Enable security**, chọn **Do not enable security protections**
 - Kiểm tra lại thông tin và chọn **Create distribution**
@@ -57,12 +57,12 @@ pre : " <b> 3.2 </b> "
 - Trong trường **Origin domain**, chọn **S3 bucket** mà bạn đã tạo.
 - Trường **Origin access**, chọn **Origin access control setting**
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf9.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf9.PNG)
 
 - Mục **Origin access control**, chọn **e-course-OAC**
 - Tiếp tục, 1 bảng thông báo hiện ra, chọn **Copy policy**, sau đó click vào **go to S3 bucket permissions** để chỉnh sửa **policy**(thường thì sẽ được tự động chỉnh sửa).
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf10.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf10.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/cf11.png)
 - Sau cùng chọn **Create origin**
 5. Cập nhật nội dung mới
@@ -70,11 +70,11 @@ pre : " <b> 3.2 </b> "
 - Mục **Add object path**, ghi **/** để cập nhật toàn bộ nội dung mới trên bucket.
 - Sau đó, chọn **Create invalidation**
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf12.png)
-![Create Account](/NestJS-AWS-workshop/images/03/cf13.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf12.PNG)
+![Create Account](/NestJS-AWS-workshop/images/03/cf13.PNG)
 
 6. Kiểm tra website
 - Để kiểm tra website đã hoạt động trên **Cloudfront** hay chưa, chọn **Distribution** vừa tạo, chuyển qua tab **General**, copy **Distribution domain name** và chạy trên trình duyệt.
 
-![Create Account](/NestJS-AWS-workshop/images/03/cf14.png)
+![Create Account](/NestJS-AWS-workshop/images/03/cf14.PNG)
 ![Create Account](/NestJS-AWS-workshop/images/03/cf15.png)
