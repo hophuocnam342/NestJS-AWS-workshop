@@ -24,7 +24,7 @@ pre : " <b> 1.1 </b> "
 
 - Select Create VPC
 
-![Create Account](/images/1/VPC2.png)
+![Create Account](/NestJS-AWS-workshop/images/1/VPC2.png)
 
 3. Options in **VPC Wizard**
 
@@ -34,4 +34,4 @@ pre : " <b> 1.1 </b> "
 - Select the number of **public/private subnets**: 2
 - Select **Create VPC**
 
-![Create Account](/static/images/1/VPC3.png)
+![Create Account](/NestJS-AWS-workshop/images/1/VPC3.png)

@@ -10,7 +10,7 @@ In the **Network & Security** section of the **EC2** interface:
 - Select **Key Pairs**
 - Select **Create key pair**
 
-![Create Account](/static/images/1/KP.png)
+![Create Account](/NestJS-AWS-workshop/images/1/KP.png)
 
 In the initialization interface:
 - In the **Name** section, set it to **ecourse-key**
@@ -18,7 +18,7 @@ In the initialization interface:
 - In the **Private key file format** section, select **.pem**
 - Scroll down to the bottom of the page and select **Create key pair**
 
-![Create Account](/static/images/1/KP1.png)
+![Create Account](/NestJS-AWS-workshop/images/1/KP1.png)
 
 {{% notice note %}}
 Key pair is required when initializing EC2.

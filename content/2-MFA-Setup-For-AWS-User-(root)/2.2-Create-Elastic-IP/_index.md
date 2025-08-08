@@ -16,7 +16,7 @@ In the **Network & Security** section of the **EC2** interface:
 - Select **Elastic IPs**
 - Select **Allocate Elastic IP address**
 
-![Create Account](/static/images/2/IP.png)
+![Create Account](/images/2/IP.png)
 
 - In the **Public IPv4 address pool** section, select **Amazon's pool of IPv4 addresses**.
 

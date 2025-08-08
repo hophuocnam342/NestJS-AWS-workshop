@@ -10,7 +10,7 @@ Trong mục **Network & Security** của giao diện **EC2**:
 - Chọn **Key Pairs**
 - Chọn **Create key pair**
 
-![Create Account](/static/images/1/KP.png)
+![Create Account](/NestJS-AWS-workshop/images/1/KP.png)
 
 Trong giao diện khởi tạo:
 - Mục **Name**, đặt là **ecourse-key**
@@ -18,7 +18,7 @@ Trong giao diện khởi tạo:
 - Mục **Private key file format**, chọn **.pem**
 - Kéo xuống cuối trang chọn **Create key pair**
 
-![Create Account](/static/images/1/KP1.png)
+![Create Account](/NestJS-AWS-workshop/images/1/KP1.png)
 
 {{% notice note %}}
 Key pair là cần thiết khi khởi tạo EC2.

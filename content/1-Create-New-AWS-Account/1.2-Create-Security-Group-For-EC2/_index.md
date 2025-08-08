@@ -13,14 +13,14 @@ pre : " <b> 1.2 </b> "
 - Select **Security Group**
 - Select **Create security group**
 
-![Create Account](/static/images/1/SG.png)
+![Create Account](/NestJS-AWS-workshop/images/1/SG.png)
 
 2. Proceed to configure
 - **Security group name**, enter Ecourse-SG
 - **Description**, enter Security Group for Ecourse
 - Select **VPC** created
 
-![Create Account](/static/images/1/SG2.png)
+![Create Account](/NestJS-AWS-workshop/images/1/SG2.png)
 
 3. Configure **Inbound rule**
 - To add a rule, select **Add rule**
@@ -30,4 +30,4 @@ pre : " <b> 1.2 </b> "
 - **HTTPS** port 443 and source is **Anywhere IPv4**
 - Select **Create security group**
 
-![Create Account](/static/images/1/SG1.png)
+![Create Account](/NestJS-AWS-workshop/images/1/SG1.png)
