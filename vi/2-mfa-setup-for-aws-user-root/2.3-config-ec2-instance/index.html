@@ -12,21 +12,21 @@
     <title>Cấu hình EC2 Instance và deploy backend :: Triển khai trang web nestjs api lên AWS</title>
 
     
-    <link href="/css/nucleus.css?1754667833" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754667833" rel="stylesheet">
-    <link href="/css/hybrid.css?1754667833" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754667833" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754667833" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754667833" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754667833" rel="stylesheet">
-    <link href="/css/theme.css?1754667833" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754667833" rel="stylesheet">
+    <link href="/css/nucleus.css?1754669428" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754669428" rel="stylesheet">
+    <link href="/css/hybrid.css?1754669428" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754669428" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754669428" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754669428" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754669428" rel="stylesheet">
+    <link href="/css/theme.css?1754669428" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754669428" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754667833" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754669428" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754667833"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754669428"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754667833"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754667833"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754669428"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754669428"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754667833"></script>
+<script type="text/javascript" src="/js/search.js?1754669428"></script>
 
     
   </div>
@@ -803,7 +803,7 @@ Nhập dòng lệnh sau:</p>
 <li>Default region name: chọn region, ở đây là <strong>us-east-1</strong></li>
 <li>Default output format: nhập <strong>json</strong></li>
 </ul>
-<p><img src="/images/3/EC.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+<p><img src="/images/3/EC.png" alt="Create Account"></p>
 <ul>
 <li>Ssh đến EC2 bằng câu lệnh</li>
 </ul>
@@ -812,7 +812,7 @@ Nhập dòng lệnh sau:</p>
 <li>Thay <strong>C:\path\to\ecourse-key.pem</strong> bằng đường dẫn thực tế đến file key.</li>
 <li>Thay <strong>[EC2-PUBLIC-IP]</strong> bằng IP public của EC2.</li>
 </ul>
-<p><img src="/images/3/EC1.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+<p><img src="/images/3/EC1.png" alt="Create Account"></p>
 <p>Sau khi SSH thành công, chạy các lệnh sau:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    <span style="color:#75715e"># Update system</span>
 </span></span><span style="display:flex;"><span>    sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade -y
@@ -833,9 +833,9 @@ Nhập dòng lệnh sau:</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Kiểm tra cài đặt</span>
 </span></span><span style="display:flex;"><span>    node --version
 </span></span><span style="display:flex;"><span>    npm --version
-</span></span></code></pre></div><p><img src="/images/3/EC2.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC3.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC4.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+</span></span></code></pre></div><p><img src="/images/3/EC2.png" alt="Create Account"></p>
+<p><img src="/images/3/EC3.png" alt="Create Account"></p>
+<p><img src="/images/3/EC4.png" alt="Create Account"></p>
 <p>sau khi cài đặt các path cần thiết, chúng ta sẽ clone dự án back end trên git về để chuẩn bị triển khai lên EC2.</p>
 <p>chạy các lệnh sau:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    <span style="color:#75715e"># Clone repository backend của bạn</span>
@@ -857,9 +857,9 @@ Nhập dòng lệnh sau:</p>
 <li>Đường link <strong>&ldquo;MONGODB_URI&rdquo;</strong> đã được tạo trong mục <a href="/vi/1-create-new-aws-account/1.4-create-mongodb-database/"><strong>1.4</strong></a>, vui lòng xem lại.</li>
 <li>Thay <strong>[your-jwt-secret]</strong> bằng secret key cho JWT, nằm trong file <strong>.env</strong> của back end.</li>
 </ul>
-<p><img src="/images/3/EC5.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC6.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC9.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+<p><img src="/images/3/EC5.png" alt="Create Account"></p>
+<p><img src="/images/3/EC6.png" alt="Create Account"></p>
+<p><img src="/images/3/EC9.png" alt="Create Account"></p>
 <p>Sau khi clone dự án xong, tiếp tục chạy các lệnh sau:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    <span style="color:#75715e"># Build application</span>
 </span></span><span style="display:flex;"><span>    npm run build
@@ -870,9 +870,9 @@ Nhập dòng lệnh sau:</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Save PM2 configuration</span>
 </span></span><span style="display:flex;"><span>    pm2 save
 </span></span><span style="display:flex;"><span>    pm2 startup
-</span></span></code></pre></div><p><img src="/images/3/EC6.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC7.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC8.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+</span></span></code></pre></div><p><img src="/images/3/EC6.png" alt="Create Account"></p>
+<p><img src="/images/3/EC7.png" alt="Create Account"></p>
+<p><img src="/images/3/EC8.png" alt="Create Account"></p>
 <p>Sau đó, tạo file Nginx Configuration</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    sudo nano /etc/nginx/sites-available/ecourse
 </span></span></code></pre></div><p>Nhập đoạn mã sau:</p>
@@ -918,9 +918,9 @@ Giải pháp tốt nhất: Đăng ký domain và trỏ về IP EC2. Cài SSL mi�
 <p>Sau khi tạo xong file Nginx, reload lại bằng lệnh:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    sudo nginx -t
 </span></span><span style="display:flex;"><span>    sudo systemctl reload nginx
-</span></span></code></pre></div><p><img src="/images/3/EC10.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+</span></span></code></pre></div><p><img src="/images/3/EC10.png" alt="Create Account"></p>
 <p>Sau khi chạy xong, test với Postman để kiểm tra xem backend api đã hoạt động chưa:</p>
-<p><img src="/images/3/EC11.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+<p><img src="/images/3/EC11.png" alt="Create Account"></p>
 <p>Thông báo cho thấy API Backend đã kết nối thành công</p>
 
 
@@ -1286,19 +1286,19 @@ Giải pháp tốt nhất: Đăng ký domain và trỏ về IP EC2. Cài SSL mi�
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754667833"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754667833"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754667833"></script>
-    <script src="/js/jquery.sticky.js?1754667833"></script>
-    <script src="/js/featherlight.min.js?1754667833"></script>
-    <script src="/js/highlight.pack.js?1754667833"></script>
+    <script src="/js/clipboard.min.js?1754669428"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754669428"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754669428"></script>
+    <script src="/js/jquery.sticky.js?1754669428"></script>
+    <script src="/js/featherlight.min.js?1754669428"></script>
+    <script src="/js/highlight.pack.js?1754669428"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754667833"></script>
-    <script src="/js/learn.js?1754667833"></script>
-    <script src="/js/hugo-learn.js?1754667833"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754669428"></script>
+    <script src="/js/learn.js?1754669428"></script>
+    <script src="/js/hugo-learn.js?1754669428"></script>
 
-    <link href="/mermaid/mermaid.css?1754667833" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754667833"></script>
+    <link href="/mermaid/mermaid.css?1754669428" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754669428"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

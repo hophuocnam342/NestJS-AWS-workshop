@@ -12,21 +12,21 @@
     <title>EC2 Instance Configuration and Backend Deployment :: Create a new AWS account.</title>
 
     
-    <link href="/css/nucleus.css?1754667833" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754667833" rel="stylesheet">
-    <link href="/css/hybrid.css?1754667833" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754667833" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754667833" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754667833" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754667833" rel="stylesheet">
-    <link href="/css/theme.css?1754667833" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754667833" rel="stylesheet">
+    <link href="/css/nucleus.css?1754669428" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754669428" rel="stylesheet">
+    <link href="/css/hybrid.css?1754669428" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754669428" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754669428" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754669428" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754669428" rel="stylesheet">
+    <link href="/css/theme.css?1754669428" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754669428" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754667833" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754669428" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754667833"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754669428"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754667833"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754667833"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754669428"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754669428"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754667833"></script>
+<script type="text/javascript" src="/js/search.js?1754669428"></script>
 
     
   </div>
@@ -707,7 +707,7 @@ Enter the following command:</p>
 <li>Default region name: select region, here is <strong>us-east-1</strong></li>
 <li>Default output format: enter <strong>json</strong></li>
 </ul>
-<p><img src="/images/3/EC.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+<p><img src="/images/3/EC.png" alt="Create Account"></p>
 <ul>
 <li>Ssh to EC2 with the command</li>
 </ul>
@@ -720,7 +720,7 @@ Enter the following command:</p>
 <p>Replace <strong>[EC2-PUBLIC-IP]</strong> with EC2&rsquo;s public IP.</p>
 </li>
 </ul>
-<p><img src="/images/3/EC1.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+<p><img src="/images/3/EC1.png" alt="Create Account"></p>
 <p>After SSH is successful, run the following commands:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    <span style="color:#75715e"># Update system</span>
 </span></span><span style="display:flex;"><span>    sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade -y
@@ -741,9 +741,9 @@ Enter the following command:</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Check the installation</span>
 </span></span><span style="display:flex;"><span>    node --version
 </span></span><span style="display:flex;"><span>    npm --version
-</span></span></code></pre></div><p><img src="/images/3/EC2.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC3.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC4.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+</span></span></code></pre></div><p><img src="/images/3/EC2.png" alt="Create Account"></p>
+<p><img src="/images/3/EC3.png" alt="Create Account"></p>
+<p><img src="/images/3/EC4.png" alt="Create Account"></p>
 <p>After installing the necessary paths, we will clone the back end project on git to prepare for deployment to EC2.</p>
 <p>run the following commands:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    <span style="color:#75715e"># Clone your backend repository </span>
@@ -765,9 +765,9 @@ Enter the following command:</p>
 <li>The link <strong>&ldquo;MONGODB_URI&rdquo;</strong> has been created in section <a href="/vi/1-create-new-aws-account/1.4-create-mongodb-database/"><strong>1.4</strong></a>, please review.</li>
 <li>Replace <strong>[your-jwt-secret]</strong> with the secret key for JWT, located in the back end&rsquo;s <strong>.env</strong> file.</li>
 </ul>
-<p><img src="/images/3/EC5.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC6.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC9.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+<p><img src="/images/3/EC5.png" alt="Create Account"></p>
+<p><img src="/images/3/EC6.png" alt="Create Account"></p>
+<p><img src="/images/3/EC9.png" alt="Create Account"></p>
 <p>After cloning the project, continue running the following commands:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    <span style="color:#75715e"># Build application </span>
 </span></span><span style="display:flex;"><span>    npm run build 
@@ -778,9 +778,9 @@ Enter the following command:</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Save PM2 configuration </span>
 </span></span><span style="display:flex;"><span>    pm2 save 
 </span></span><span style="display:flex;"><span>    pm2 startups
-</span></span></code></pre></div><p><img src="/images/3/EC6.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC7.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
-<p><img src="/images/3/EC8.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+</span></span></code></pre></div><p><img src="/images/3/EC6.png" alt="Create Account"></p>
+<p><img src="/images/3/EC7.png" alt="Create Account"></p>
+<p><img src="/images/3/EC8.png" alt="Create Account"></p>
 <p>Then, create Nginx Configuration file</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    sudo nano /etc/nginx/sites-available/ecourse
 </span></span></code></pre></div><p>Enter the following code:</p>
@@ -826,9 +826,9 @@ The best solution: Register a domain and point it to EC2 IP. Install free SSL wi
 <p>After creating the Nginx file, reload it with the command:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    sudo nginx -t
 </span></span><span style="display:flex;"><span>    sudo systemctl reload nginx
-</span></span></code></pre></div><p><img src="/images/3/EC10.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+</span></span></code></pre></div><p><img src="/images/3/EC10.png" alt="Create Account"></p>
 <p>After running, test with Postman to check if the backend api is working:</p>
-<p><img src="/images/3/EC11.png?featherlight=false&amp;width=90pc" alt="Create Account"></p>
+<p><img src="/images/3/EC11.png" alt="Create Account"></p>
 
 
 
@@ -1143,19 +1143,19 @@ The best solution: Register a domain and point it to EC2 IP. Install free SSL wi
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754667833"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754667833"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754667833"></script>
-    <script src="/js/jquery.sticky.js?1754667833"></script>
-    <script src="/js/featherlight.min.js?1754667833"></script>
-    <script src="/js/highlight.pack.js?1754667833"></script>
+    <script src="/js/clipboard.min.js?1754669428"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754669428"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754669428"></script>
+    <script src="/js/jquery.sticky.js?1754669428"></script>
+    <script src="/js/featherlight.min.js?1754669428"></script>
+    <script src="/js/highlight.pack.js?1754669428"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754667833"></script>
-    <script src="/js/learn.js?1754667833"></script>
-    <script src="/js/hugo-learn.js?1754667833"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754669428"></script>
+    <script src="/js/learn.js?1754669428"></script>
+    <script src="/js/hugo-learn.js?1754669428"></script>
 
-    <link href="/mermaid/mermaid.css?1754667833" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754667833"></script>
+    <link href="/mermaid/mermaid.css?1754669428" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754669428"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
