@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cài đặt backend Nestjs cho EC2 on Triển khai trang web nestjs api lên AWS</title>
-    <link>//localhost:1313/vi/2-mfa-setup-for-aws-user-root/</link>
+    <link>/vi/2-mfa-setup-for-aws-user-root/</link>
     <description>Recent content in Cài đặt backend Nestjs cho EC2 on Triển khai trang web nestjs api lên AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1313/vi/2-mfa-setup-for-aws-user-root/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/vi/2-mfa-setup-for-aws-user-root/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
