@@ -1,79 +1,16 @@
 ---
-title : "AWS Database Benchmarking Suite"
+title : "Các hoạt động giám sát"
 date : "2025-06-08"
 weight : 5
 chapter : false
 ---
 
-# AWS Database Benchmarking Suite - Bộ công cụ đánh giá hiệu năng cơ sở dữ liệu AWS
+Chúng ta sẽ sử dụng 2 dịch vụ sau cho việc giám sát:
 
-#### Tổng quan
-Trong workshop này, bạn sẽ xây dựng một bộ công cụ comprehensive để test performance của các AWS database services khác nhau dưới các workload khác nhau. Bạn sẽ học cách thiết kế và triển khai một hệ thống benchmarking tự động, so sánh kết quả, phát hiện performance regression, và tạo báo cáo dashboard.
+**AWS CloudTrail** là một dịch vụ của Amazon Web Services (AWS) giúp ghi lại hoạt động của tài khoản AWS của bạn, bao gồm cả các hành động được thực hiện bởi người dùng, vai trò hoặc dịch vụ AWS. Nó hoạt động như một công cụ kiểm toán và giám sát, ghi lại các sự kiện dưới dạng nhật ký, cho phép người dùng xem lại lịch sử hoạt động, phân tích rủi ro và đảm bảo tuân thủ các quy định. 
 
-#### Mục tiêu học tập
-- Hiểu về các AWS database services chính (RDS, DynamoDB, Aurora, ElastiCache)
-- Thiết kế methodology testing chuẩn hóa cho database performance
-- Xây dựng automated benchmark execution system
-- Tạo tools so sánh kết quả và phát hiện regression
-- Thiết kế reporting dashboard
-- Viết best practices documentation
+->**CloudTrail**: Theo dõi mọi thao tác (API call, tạo/xoá resource, v.v.) trên tài khoản AWS.
 
-#### Kiến thức cần thiết
-- Hiểu cơ bản về AWS services (EC2, IAM, CloudWatch)
-- Kiến thức về database concepts
-- Kinh nghiệm với Python hoặc Node.js
-- Hiểu về performance testing concepts
+**Amazon CloudWatch** là dịch vụ theo dõi và quản lý cung cấp dữ liệu và thông tin định hướng hành động cho tài nguyên cơ sở hạ tầng và ứng dụng AWS, ứng dụng hybrid cũng như ứng dụng on-premises. Bạn có thể thu thập và truy cập tất cả dữ liệu về hiệu năng và hoạt động dưới hình thức logs và metrics trong cùng một nền tảng, thay vì theo dõi riêng lẻ (máy chủ, mạng hoặc cơ sở dữ liệu). CloudWatch cho phép bạn theo dõi end-to-end (ứng dụng, cơ sở hạ tầng và dịch vụ) và tận dụng cảnh báo, logs và dữ liệu sự kiện để tự động hóa các hành động và giảm Mean Time To Resolution (MTTR). Dịch vụ này giúp bạn giải phóng tài nguyên quan trọng và tập trung vào việc xây dựng các ứng dụng và giá trị kinh doanh.
 
-#### Thời gian ước tính
-- **Lab 5.1**: 30 phút - Setup môi trường và infrastructure
-- **Lab 5.2**: 45 phút - Thiết kế benchmark methodology
-- **Lab 5.3**: 60 phút - Xây dựng automated testing framework
-- **Lab 5.4**: 45 phút - Tạo comparison tools và regression detection
-- **Lab 5.5**: 30 phút - Xây dựng reporting dashboard
-- **Lab 5.6**: 30 phút - Viết best practices documentation
-
-#### Chi phí ước tính
-- **RDS instances**: ~$50-100 (tùy theo instance type và thời gian sử dụng)
-- **DynamoDB**: ~$10-20 (cho testing workload)
-- **EC2 instances**: ~$20-40 (cho benchmark runner)
-- **CloudWatch**: ~$5-10
-- **Tổng cộng**: ~$85-170 cho toàn bộ workshop
-
-{{% notice warning %}}
-**Lưu ý quan trọng**: Workshop này sẽ tạo ra các AWS resources có tính phí. Hãy đảm bảo xóa tất cả resources sau khi hoàn thành để tránh phát sinh chi phí không cần thiết.
-{{% /notice %}}
-
-#### Nội dung chính
-
-1. [Thiết lập Infrastructure và Môi trường](5.1-setup-infrastructure/)
-2. [Thiết kế Benchmark Methodology](5.2-benchmark-methodology/)
-3. [Xây dựng Automated Testing Framework](5.3-automated-framework/)
-4. [Tạo Comparison Tools và Regression Detection](5.4-comparison-tools/)
-5. [Xây dựng Reporting Dashboard](5.5-reporting-dashboard/)
-6. [Viết Best Practices Documentation](5.6-best-practices/)
-
-#### Kiến trúc tổng thể
-
-```mermaid
-graph TD
-    A[Benchmark Runner] --> B[RDS MySQL]
-    A --> C[RDS PostgreSQL]
-    A --> D[DynamoDB]
-    A --> E[ElastiCache Redis]
-    A --> F[Aurora]
-    
-    G[CloudWatch] --> A
-    H[Results Storage] --> A
-    I[Dashboard] --> H
-    J[Comparison Engine] --> H
-```
-
-#### Các AWS Services sẽ sử dụng
-- **EC2**: Benchmark runner instances
-- **RDS**: MySQL, PostgreSQL, Aurora databases
-- **DynamoDB**: NoSQL database testing
-- **ElastiCache**: Redis caching layer
-- **CloudWatch**: Monitoring và metrics
-- **S3**: Lưu trữ benchmark results
-- **Lambda**: Automated cleanup và processing
-- **IAM**: Security và permissions 
+-> **CloudWatch**: Giám sát log, metric, cảnh báo cho EC2/backend.

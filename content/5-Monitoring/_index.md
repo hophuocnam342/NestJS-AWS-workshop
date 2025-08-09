@@ -1,79 +1,16 @@
 ---
-title : "AWS Database Benchmarking Suite"
+title : "Monitoring Activities"
 date : "2025-06-08"
 weight : 5
 chapter : false
 ---
 
-# AWS Database Benchmarking Suite
+We will use the following 2 services for monitoring:
 
-#### Overview
-In this workshop, you will build a comprehensive benchmarking suite to test the performance of various AWS database services under different workloads. You will learn how to design and deploy an automated benchmarking system, compare results, detect performance regressions, and create reporting dashboards.
+**AWS CloudTrail** is an Amazon Web Services (AWS) service that records the activity of your AWS account, including actions performed by users, roles, or AWS services. It acts as an auditing and monitoring tool, recording events in logs, allowing users to review activity history, analyze risks, and ensure compliance with regulations.
 
-#### Learning Objectives
-- Understand major AWS database services (RDS, DynamoDB, Aurora, ElastiCache)
-- Design standardized testing methodology for database performance
-- Build automated benchmark execution system
-- Create result comparison tools and regression detection
-- Design reporting dashboard
-- Write best practices documentation
+->**CloudTrail**: Tracks every action (API call, resource creation/deletion, etc.) on an AWS account.
 
-#### Prerequisites
-- Basic understanding of AWS services (EC2, IAM, CloudWatch)
-- Knowledge of database concepts
-- Experience with Python or Node.js
-- Understanding of performance testing concepts
+**Amazon CloudWatch** is a monitoring and management service that provides actionable data and insights for AWS infrastructure resources and applications, hybrid applications, and on-premises applications. You can collect and access all performance and operational data in the form of logs and metrics in one platform, instead of monitoring them individually (servers, networks, or databases). CloudWatch allows you to monitor end-to-end (applications, infrastructure, and services) and leverage alarms, logs, and event data to automate actions and reduce Mean Time To Resolution (MTTR). This service helps you free up critical resources to focus on building applications and business value.
 
-#### Estimated Time
-- **Lab 5.1**: 30 minutes - Setup environment and infrastructure
-- **Lab 5.2**: 45 minutes - Design benchmark methodology
-- **Lab 5.3**: 60 minutes - Build automated testing framework
-- **Lab 5.4**: 45 minutes - Create comparison tools and regression detection
-- **Lab 5.5**: 30 minutes - Build reporting dashboard
-- **Lab 5.6**: 30 minutes - Write best practices documentation
-
-#### Estimated Cost
-- **RDS instances**: ~$50-100 (depending on instance type and usage time)
-- **DynamoDB**: ~$10-20 (for testing workload)
-- **EC2 instances**: ~$20-40 (for benchmark runner)
-- **CloudWatch**: ~$5-10
-- **Total**: ~$85-170 for entire workshop
-
-{{% notice warning %}}
-**Important Note**: This workshop will create AWS resources that incur costs. Please ensure to delete all resources after completion to avoid unnecessary charges.
-{{% /notice %}}
-
-#### Main Content
-
-1. [Setup Infrastructure and Environment](5.1-setup-infrastructure/)
-2. [Design Benchmark Methodology](5.2-benchmark-methodology/)
-3. [Build Automated Testing Framework](5.3-automated-framework/)
-4. [Create Comparison Tools and Regression Detection](5.4-comparison-tools/)
-5. [Build Reporting Dashboard](5.5-reporting-dashboard/)
-6. [Write Best Practices Documentation](5.6-best-practices/)
-
-#### Overall Architecture
-
-```mermaid
-graph TD
-    A[Benchmark Runner] --> B[RDS MySQL]
-    A --> C[RDS PostgreSQL]
-    A --> D[DynamoDB]
-    A --> E[ElastiCache Redis]
-    A --> F[Aurora]
-    
-    G[CloudWatch] --> A
-    H[Results Storage] --> A
-    I[Dashboard] --> H
-    J[Comparison Engine] --> H
-```
-
-#### AWS Services to be used
-- **EC2**: Benchmark runner instances
-- **RDS**: MySQL, PostgreSQL, Aurora databases
-- **DynamoDB**: NoSQL database testing
-- **ElastiCache**: Redis caching layer
-- **CloudWatch**: Monitoring and metrics
-- **S3**: Store benchmark results
-- **Lambda**: Automated cleanup and processing
-- **IAM**: Security and permissions 
+-> **CloudWatch**: Log monitoring, metrics, and alarms for EC2/backend.
