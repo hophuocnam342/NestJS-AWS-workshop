@@ -3,6 +3,7 @@ title : "Monitoring Activities"
 date : "2025-06-08"
 weight : 5
 chapter : false
+pre : " <b> 5. </b> "
 ---
 
 We will use the following 2 services for monitoring:

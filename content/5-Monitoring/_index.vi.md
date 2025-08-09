@@ -3,6 +3,7 @@ title : "Các hoạt động giám sát"
 date : "2025-06-08"
 weight : 5
 chapter : false
+pre : " <b> 5. </b> "
 ---
 
 Chúng ta sẽ sử dụng 2 dịch vụ sau cho việc giám sát:
