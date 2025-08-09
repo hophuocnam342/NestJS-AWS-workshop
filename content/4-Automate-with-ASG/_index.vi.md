@@ -1,58 +1,54 @@
 ---
-title : "Hỗ trợ Xác thực Tài khoản"
-date :  "2025-06-08"
+title : "Tự động hóa với Auto Scaling Group"
+date : "2025-08-06"
 weight : 4
 chapter : false
 pre : " <b> 4. </b> "
 ---
 
-**Nội dung:**
-- [Kiểm tra các thông tin](#kiểm-tra-các-thông-tin)
-- [Tạo case hỗ trợ với AWS Support](#tạo-case-hỗ-trợ-với-aws-support)
+#### Tại sao cần sử dụng Auto scaling group?
 
-Trong quá trình khởi tạo tài khoản AWS, ở bước xác thực thông tin số điện thoại liên lạc, đôi khi sẽ xảy ra tình trạng không nhận được tin nhắn SMS hoặc cuộc gọi từ phía AWS. Trong trường hợp đó, hãy làm theo các bước sau để hoàn thành việc xác nhận thông tin tài khoản:
+Khi ứng dụng của chúng ta đưa vào hoạt động, lượng người truy cập sẽ thay đổi theo thời gian, do đó chúng ta cần thường xuyên thay đổi (scaling) lượng instance nhằm nâng cao tính sẵn sàng và tiết kiệm chi phí. Để tự động hóa và linh hoạt trong công việc scaling, chúng ta sẽ có giải pháp là Auto Scaling Group.
 
-#### Kiểm tra các thông tin
+#### Sơ lược về **Auto Scaling Group**
 
-Đầu tiên, hãy kiểm tra lại các thông tin tài khoản của bạn và đảm bảo chúng đã được nhập chính xác:
-- Bạn đã nhập thông tin số điện thoại và chọn mã vùng quốc tế chính xác để nhận cuộc gọi.
-- Nếu bạn sử dụng điện thoại di động, kiểm tra điện thoại của bạn để chắc chắn bạn vẫn đang trong vòng phủ sóng để nhận  cuộc gọi.
-- Thông tin về phương thức thanh toán đã được nhập chính xác.
-{{% notice info %}}
-Hãy chắc chắn rằng số điện thoại mà bạn cung cấp trong tài khoản AWS của bạn có thể liên lạc được.
-{{% /notice %}}
+ **Amazon EC2 Auto Scaling Group (ASG)** giúp tự động điều chỉnh số lượng EC2 instances theo nhu cầu của ứng dụng. ASG có thể tự động mở rộng (scale out) khi lưu lượng tăng, hoặc thu nhỏ (scale in) khi lưu lượng giảm, giúp tối ưu hóa tài nguyên và giảm chi phí. Nó cũng giúp đảm bảo tính sẵn sàng cao bằng cách phân phối instances qua nhiều Availability Zones để duy trì hoạt động liên tục ngay cả khi một phần của hệ thống gặp sự cố.
 
-#### Tạo case hỗ trợ với AWS Support
+#### Các loại Scaling trong ASG
 
-Sau khi kiểm tra thông tin chính xác nhưng vẫn chưa nhận được cuộc gọi xác thực, AWS Support sẽ hỗ trợ bạn kích hoạt tài khoản một cách thủ công.
+Trong nội dung này, chúng ta sẽ tìm hiểu về các loại Scaling sau đây:
 
-1. Truy cập vào [AWS Support console](https://aws.amazon.com/support/), chọn **Create case**.
+**Manual Scaling**: Người dùng tự tay điều chỉnh số lượng EC2 instances trong Auto Scaling Group dựa trên yêu cầu. Đây là phương pháp thủ công, không tự động dựa trên chỉ số cụ thể.
 
-![AWS Support](/images/4/0001.png?featherlight=false&width=90pc)
+**Dynamic Scaling**: Tự động điều chỉnh số lượng instances dựa trên các chỉ số thời gian thực như CPU utilization, network traffic, hoặc custom metrics từ Amazon CloudWatch. Dynamic scaling có 3 chính sách chính:
 
-2. Chọn **Account and billing support** và nhập các thông tin hỗ trợ:
-   - Type: chọn **Account**.
-   - Category: chọn **Activation**.
-   - Subject: viết ngắn gọn tình trạng gặp phải của bạn (VD: **Did not receive an SMS message or call for verification**)
-   - Description: Cung cấp chi tiết tình trạng gặp phải và thông tin về thời gian bạn cần hỗ trợ kích hoạt tài khoản.
-   - Attachments: Đính kèm hình ảnh mô tả bước xác thực đang vướng phải.
+**Target Tracking Scaling**: Duy trì một giá trị mục tiêu cho metric cụ thể
 
-![AWS Support](/images/4/0002.png?featherlight=false&width=90pc)
+**Step Scaling**: Điều chỉnh dựa trên ngưỡng metric với các bước tăng/giảm khác nhau
 
-![AWS Support](/images/4/0003.png?featherlight=false&width=90pc)
+**Simple Scaling**: Điều chỉnh dựa trên một ngưỡng đơn giản
 
-![AWS Support](/images/4/0004.png?featherlight=false&width=90pc)
+**Scheduled Scaling**: Cho phép chúng ta cấu hình các thời gian cụ thể để tự động mở rộng hoặc thu nhỏ instances, ví dụ như tăng số lượng instances vào giờ cao điểm hoặc giảm xuống ngoài giờ làm việc. Phù hợp cho các trường hợp mà chúng ta đã biết trước mô hình lưu lượng truy cập.
 
-3. Ở mục **Contact options**, chọn **Chat** ở **Contact methods**.
+**Predictive Scaling**: Sử dụng machine learning để dự đoán hoạt động bằng cách phân tích load data trong lịch sử để tìm các mẫu hàng ngày hoặc hàng tuần trong luồng lưu lượng truy cập. Nó sử dụng thông tin này để dự báo nhu cầu công suất trong tương lai để Amazon EC2 Auto Scaling có thể chủ động tăng công suất của Auto Scaling Group để phù hợp với dự kiến.
 
-![AWS Support](/images/4/0005.png?featherlight=false&width=90pc)
 
-4. Chọn **Submit**.
+#### Launch Template
+**Launch Template** là một cấu hình chứa các thông số cần thiết để khởi chạy EC2 instances. Nó lưu trữ các chi tiết như loại instance, AMI (Amazon Machine Image), key pair, network settings, security groups, và các thông tin khác về cấu hình của EC2. Nhằm đơn giản hóa việc tạo instance, hỗ trợ trong việc tự động tạo mới các instance trong ASG.
 
-![AWS Support](/images/4/0006.png?featherlight=false&width=90pc)
-5. Đội ngũ AWS Support sẽ liên lạc và hỗ trợ kích hoạt tài khoản của bạn.
+- **Launch Templates** hỗ trợ quản lý phiên bản, cho phép bạn duy trì nhiều phiên bản cấu hình khác nhau và kiểm soát chặt chẽ các thay đổi, giúp tăng cường bảo mật và tuân thủ.
 
-![AWS Support](/images/4/0007.png?featherlight=false&width=90pc)
-{{% notice note %}}
-Bạn có thể tạo yêu cầu hỗ trợ với AWS Support ngay cả khi tài khoản của bạn chưa được kích hoạt.
+#### Elastic Load Balancer
+**Elastic Load Balancer (ELB)** là một dịch vụ giúp phân phối đều tải công việc (traffic) đến nhiều máy chủ hoặc instances để đảm bảo hệ thống hoạt động ổn định và tránh quá tải cho bất kỳ một máy chủ nào. Nó giúp tối ưu hiệu suất, tăng tính sẵn sàng và đảm bảo rằng nếu một máy chủ gặp sự cố, lưu lượng sẽ được chuyển hướng tới các máy chủ khác mà không ảnh hưởng đến người dùng.
+
+AWS cung cấp ba loại Load Balancer:
+
+- **Application Load Balancer (ALB)**: Tối ưu cho HTTP/HTTPS traffic, hoạt động ở tầng ứng dụng (Layer 7)
+- **Network Load Balancer (NLB)**: Xử lý traffic ở tầng vận chuyển (Layer 4), phù hợp cho các ứng dụng yêu cầu hiệu suất cực cao
+- **Gateway Load Balancer (GWLB)**: Dùng để triển khai và quản lý các thiết bị mạng ảo
+#### Target Group
+**Target Group** là một thành phần của **Elastic Load Balancer (ELB)**, dùng để xác định và quản lý các EC2 instances, IP addresses, Lambda functions, hoặc các container mà Load Balancer sẽ phân phối lưu lượng truy cập đến. Target Group cũng định nghĩa các health check để đảm bảo traffic chỉ được gửi đến các targets khỏe mạnh.
+
+{{% notice warning %}}
+Cấu hình health check không phù hợp có thể dẫn đến việc loại bỏ các instances khỏe mạnh hoặc giữ lại các instances có vấn đề trong Target Group. Hãy đảm bảo thiết lập các ngưỡng timeout, interval và threshold phù hợp với đặc điểm ứng dụng của bạn.
 {{% /notice %}}

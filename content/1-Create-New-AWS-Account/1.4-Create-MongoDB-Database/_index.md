@@ -1,6 +1,6 @@
 ---
 title : "Configure database with MongoDB"
-date : "2025-06-08"
+date : "2025-08-06"
 weight : 4
 chapter : false
 pre : " <b> 1.4 </b> "

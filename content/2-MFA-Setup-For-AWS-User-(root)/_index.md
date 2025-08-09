@@ -1,6 +1,6 @@
 ---
 title : "Install Nestjs backend for EC2"
-date : "2025-06-08"
+date : "2025-08-06"
 weight : 2
 chapter : false
 pre : " <b> 2. </b> "

@@ -1,6 +1,6 @@
 ---
 title : "Cấu hình EC2 Instance và deploy backend"
-date :  "2025-06-08"
+date :  "2025-08-06"
 weight : 3
 chapter : false
 pre : " <b> 2.3 </b> "

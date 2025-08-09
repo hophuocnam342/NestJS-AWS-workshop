@@ -1,58 +1,53 @@
 ---
-title : "Account Authentication Support"
-date : "2025-06-08"
+title : "Automation with Auto Scaling Group"
+date : "2025-08-06"
 weight : 4
 chapter : false
 pre : " <b> 4. </b> "
 ---
 
-**Content:**
-- [Check the information](#check-the-information)
-- [Create a support case with AWS Support](#create-a-support-case-with-aws-support)
+#### Why use Auto scaling group?
 
-During the AWS account creation process, at the contact phone number verification step, sometimes there will be a situation where no SMS or calls from AWS will be received. In that case, follow these steps to complete the account information verification:
+When our application is put into operation, the number of visitors will change over time, so we need to regularly change (scaling) the number of instances to improve availability and save costs. To automate and be flexible in scaling work, we will have the solution of Auto Scaling Group.
 
-#### Check the information
+#### Overview of **Auto Scaling Group**
 
-First, double-check your account information and make sure it's entered correctly:
-- You have entered the phone number information and selected the correct international area code to receive the call.
-- If you use a mobile phone, check your phone to make sure you are still within range to receive calls.
-- Payment method information has been entered correctly.
-{{% notice info %}}
-Make sure that the phone number you provide in your AWS account is reachable.
-{{% /notice %}}
+**Amazon EC2 Auto Scaling Group (ASG)** helps automatically adjust the number of EC2 instances according to the needs of the application. ASG can automatically expand (scale out) when traffic increases, or shrink (scale in) when traffic decreases, helping to optimize resources and reduce costs. It also helps ensure high availability by distributing instances across multiple Availability Zones to maintain continuous operations even if one part of the system fails.
 
-#### Create a support case with AWS Support
+#### Types of Scaling in ASG
 
-After checking that the information is correct but still has not received the verification call, AWS Support will assist you to activate your account manually.
+In this content, we will learn about the following types of Scaling:
 
-1. Go to the [AWS Support console](https://aws.amazon.com/support/), select **Create case**.
+**Manual Scaling**: Users manually adjust the number of EC2 instances in the Auto Scaling Group based on demand. This is a manual method, not automatically based on specific metrics.
 
-![AWS Support](/images/4/0001.png?featherlight=false&width=90pc)
+**Dynamic Scaling**: Automatically adjusts the number of instances based on real-time metrics such as CPU utilization, network traffic, or custom metrics from Amazon CloudWatch. Dynamic scaling has three main policies:
 
-2. Select **Account and billing support** and enter the support information:
-   - Type: select **Account**.
-   - Category: select **Activation**.
-   - Subject: briefly write down your situation (eg **Did not receive an SMS message or call for verification**)
-   - Description: Provide details of the situation encountered and information about the time you need support to activate the account.
-   - Attachments: Attach an image describing the authentication step you are facing.
+**Target Tracking Scaling**: Maintains a target value for a specific metric
 
-![AWS Support](/images/4/0002.png?featherlight=false&width=90pc)
+**Step Scaling**: Adjusts based on a metric threshold with different increment/decrement steps
 
-![AWS Support](/images/4/0003.png?featherlight=false&width=90pc)
+**Simple Scaling**: Adjusts based on a simple threshold
 
-![AWS Support](/images/4/0004.png?featherlight=false&width=90pc)
+**Scheduled Scaling**: Allows us to configure specific times to automatically scale up or down instances, such as increasing the number of instances during peak hours or reducing them during off-peak hours. Suitable for cases where we already know the traffic pattern.
 
-3. Under **Contact options**, select **Chat** under **Contact methods**.
+**Predictive Scaling**: Uses machine learning to predict activity by analyzing historical load data to find daily or weekly patterns in traffic flows. It uses this information to forecast future capacity needs so that Amazon EC2 Auto Scaling can proactively increase the capacity of the Auto Scaling Group to match the forecast.
 
-![AWS Support](/images/4/0005.png?featherlight=false&width=90pc)
+#### Launch Template
+**Launch Template** is a configuration that contains the parameters needed to launch EC2 instances. It stores details such as instance type, AMI (Amazon Machine Image), key pair, network settings, security groups, and other information about the EC2 configuration. It simplifies instance creation, and assists in automatically creating new instances in ASG.
 
-4. Select **Submit**.
+- **Launch Templates** support version management, allowing you to maintain multiple versions of your configuration and tightly control changes, helping to enhance security and compliance.
 
-![AWS Support](/images/4/0006.png?featherlight=false&width=90pc)
-5. The AWS Support team will contact and assist in activating your account.
+#### Elastic Load Balancer
+**Elastic Load Balancer (ELB)** is a service that helps distribute workloads (traffic) evenly across multiple servers or instances to ensure system stability and avoid overloading any one server. It helps optimize performance, increase availability, and ensure that if one server fails, traffic is redirected to other servers without affecting users.
 
-![AWS Support](/images/4/0007.png?featherlight=false&width=90pc)
-{{% notice note %}}
-You can create a support request with AWS Support even if your account is not activated.
+AWS provides three types of Load Balancers:
+
+- **Application Load Balancer (ALB)**: Optimized for HTTP/HTTPS traffic, operating at the application layer (Layer 7)
+- **Network Load Balancer (NLB)**: Handles traffic at the transport layer (Layer 4), suitable for applications requiring extremely high performance
+- **Gateway Load Balancer (GWLB)**: Used to deploy and manage virtual network devices
+#### Target Group
+**Target Group** is a component of **Elastic Load Balancer (ELB)**, used to identify and manage the EC2 instances, IP addresses, Lambda functions, or containers to which the Load Balancer will distribute traffic. Target Groups also define health checks to ensure that traffic is only sent to healthy targets.
+
+{{% notice warning %}}
+Inappropriate health check configuration can result in healthy instances being removed or problematic instances being retained in the Target Group. Make sure to set timeouts, intervals, and thresholds that are appropriate for your application.
 {{% /notice %}}

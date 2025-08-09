@@ -1,6 +1,6 @@
 ---
 title : "Khởi tạo EC2 Instance"
-date :  "2025-06-08"
+date :  "2025-08-06"
 weight : 1
 chapter : false
 pre : " <b> 2.1 </b> "

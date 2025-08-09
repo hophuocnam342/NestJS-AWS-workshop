@@ -1,6 +1,6 @@
 ---
 title : "Create Security Group for EC2"
-date : "2025-06-08"
+date : "2025-08-06"
 weight : 2
 chapter : false
 pre : " <b> 1.2 </b> "

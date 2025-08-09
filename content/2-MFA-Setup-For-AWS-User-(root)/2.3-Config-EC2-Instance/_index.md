@@ -1,6 +1,6 @@
 ---
 title : "EC2 Instance Configuration and Backend Deployment"
-date : "2025-06-08"
+date : "2025-08-06"
 weight : 3
 chapter : false
 pre : " <b> 2.3 </b> "
