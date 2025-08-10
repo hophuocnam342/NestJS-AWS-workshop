@@ -1,5 +1,5 @@
 ---
-title : "Thiết kế Benchmark Methodology"
+title : "Thiết lập CloudTrail"
 date : "2025-06-08"
 weight : 2
 chapter : false

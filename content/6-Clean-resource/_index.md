@@ -1,5 +1,5 @@
 ---
-title : "Monitoring Activities"
+title : "Clean resource"
 date : "2025-06-08"
 weight : 6
 chapter : false

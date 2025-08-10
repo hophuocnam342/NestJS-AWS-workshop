@@ -1,5 +1,5 @@
 ---
-title : "Các hoạt động giám sát"
+title : "Dọn dẹp tài nguyên"
 date : "2025-06-08"
 weight : 6
 chapter : false

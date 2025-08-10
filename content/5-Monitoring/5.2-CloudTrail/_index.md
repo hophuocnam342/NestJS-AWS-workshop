@@ -1,5 +1,5 @@
 ---
-title : "Design Benchmark Methodology"
+title : "Setting up CloudTrail"
 date : "2025-06-08"
 weight : 2
 chapter : false
