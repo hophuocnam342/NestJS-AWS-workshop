@@ -83,20 +83,6 @@ AWS cung cấp ba loại Load Balancer:
 
 Trong bài hướng dẫn này, chúng ta sẽ sử dụng **Application Load Balancer (ALB)** để tối ưu HTTP/HTTPS traffic.
 
-#### Giới thiệu ElastiCache
-
-{{% notice warning %}}
-Service này có thể tính phí cao, vui lòng cân nhắc trước khi sử dụng. 
-{{% /notice %}}
-
-**ElastiCache** là một dịch vụ của AWS mà cho phép ta tạo một clusters Memcached hoặc Redis một cách dễ dàng thay vì ta phải tự cài đặt và cấu hình nhiều thứ. 
-AWS ElastiCache sẽ cover cho ta nhứng thứ sau:
-
-- Installation: khi ta tạo một ElastiCache thì AWS sẽ tự động cài đặt những thứ cần thiết cho Memcached và Redis ở bên dưới của nó, ta chỉ cần đợi nó cài xong và xài.
-- Administration: những vấn đề liên quan tới công việc của system admin cho một ElastiCache thì ta không cần phải quan tâm, AWS làm cho ta.
-- Monitoring: ElastiCache sẽ push metrics của nó lên trên CloudWatch.
-- Backups: AWS có option cho ta tự động backup dữ liệu cache (redis only).
-
 #### Các dịch vụ thông báo
 
 **1. Amazon Cloudtrail**
@@ -111,14 +97,11 @@ AWS ElastiCache sẽ cover cho ta nhứng thứ sau:
 
 **AWS SNS (Simple Notification Service)** là một dịch vụ nhắn tin của Amazon Web Services (AWS) cho phép các nhà phát triển gửi thông báo (notifications) đến các thuê bao (subscribers) hoặc các ứng dụng khác. Nó hoạt động theo mô hình xuất bản/đăng ký (publish/subscribe), nơi các nhà xuất bản (publishers) gửi tin nhắn đến các chủ đề (topics), và các người đăng ký (subscribers) nhận thông báo từ các chủ đề mà họ quan tâm. 
 
-**4. Amazon Simple Queue Service(AWS SQS)**
-
-**AWS SQS**, hay **Amazon Simple Queue Service**, là một dịch vụ hàng đợi tin nhắn phân tán, được quản lý hoàn toàn bởi AWS, giúp các ứng dụng và hệ thống phân tán có thể giao tiếp với nhau một cách linh hoạt và đáng tin cậy. SQS giúp tách rời các thành phần của ứng dụng, cho phép chúng hoạt động độc lập và tăng khả năng mở rộng, chịu lỗi. 
-
-
 #### Nội dung chính
 
 1. [Chuẩn bị](1-create-new-aws-account/)
-2. [Cài đặt backend Nestjs cho EC2](2-mfa-setup-for-aws-user-(root)/)
+2. [Cài đặt backend Nestjs cho EC2](2-Install-Nestjs-backend-for-EC2/)
 3. [Cấu hình dịch vụ triển khai frontend](3-Config-service-hosting-front-end/)
-4. [Dọn dẹp tài nguyên](4-verify-new-account/)
+4. [Tự động hóa với Auto Scaling Group](4-Automate-with-ASG/)
+5. [Các hoạt động giám sát](5-Monitoring/)
+6. [Dọn dẹp tài nguyên](4-Clean-resource/)

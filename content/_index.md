@@ -90,22 +90,6 @@ In this tutorial, we will use **Application Load Balancer (ALB)** to optimize HT
 
 #### Introducing ElastiCache
 
-{{% notice warning %}}
-This service may be expensive, please consider before using.
-
-{{% /notice %}}
-
-**ElastiCache** is an AWS service that allows us to create a Memcached or Redis cluster easily instead of having to install and configure many things ourselves.
-
-AWS ElastiCache will cover the following for us:
-
-- Installation: when we create an ElastiCache, AWS will automatically install the necessary things for Memcached and Redis below it, we just need to wait for it to finish installing and use it.
-
-- Administration: we don't need to worry about the system admin's work for an ElastiCache, AWS will do it for us.
-
-- Monitoring: ElastiCache will push its metrics to CloudWatch.
-
-- Backups: AWS has an option for us to automatically backup cache data (redis only).
 
 #### Notification Services
 
@@ -121,13 +105,11 @@ AWS ElastiCache will cover the following for us:
 
 **AWS SNS (Simple Notification Service)** is a messaging service from Amazon Web Services (AWS) that allows developers to send notifications to subscribers or other applications. It operates on a publish/subscribe model, where publishers send messages to topics, and subscribers receive notifications from topics they are interested in.
 
-**4. Amazon Simple Queue Service(AWS SQS)**
-
-**AWS SQS**, or **Amazon Simple Queue Service**, is a fully managed, distributed message queuing service provided by AWS that enables applications and distributed systems to communicate with each other in a flexible and reliable way. SQS helps decouple application components, allowing them to operate independently and increase scalability and fault tolerance.
-
 #### Main content
 
 1. [Preparation](1-create-new-aws-account/)
-2. [Install Nestjs backend for EC2](2-mfa-setup-for-aws-user-(root)/)
-3. [Frontend Deployment Service Configuration](3-Config-service-hosting-front-end/)
-4. [Clean up resources](4-verify-new-account/)
+2. [Install Nestjs backend for EC2](2-Install-Nestjs-backend-for-EC2/)
+3. [Config service hosting frontend](3-Config-service-hosting-front-end/)
+4. [Automate with Auto Scaling Group](4-Automate-with-ASG/)
+5. [Monitoring activities](5-Monitoring/)
+6. [Clean up resources](4-Clean-resource/)
